@@ -1,24 +1,75 @@
 /* Write your CSS here */
 .todo-card-container {
   list-style-type: none;
+  margin-bottom: 16px;
 }
+
 .todo-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  gap: 15px;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid #d7dfe9;
+  border-radius: 10px;
+  padding: 14px;
+  background-color: #f9fbfe;
 }
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-grow: 1;
+}
+
 .todo-title {
-  font-weight: normal;
-  font-size: 20px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #000000;
+  margin: 0;
 }
-.delete-button {
-  color: #ff0b37;
-  border: 2px solid #ff0b37;
+
+.completed {
+  text-decoration: line-through;
+  color: #9aa5b1;
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin: 0;
+}
+
+.edit-input {
+  height: 20px;
+  width: 100%;
+  border: 1px solid #cbd2d9;
   border-radius: 8px;
-  background-color: transparent;
+  padding-left: 10px;
   padding: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.action-button {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #ff8542;
+  color: #ffffff;
+}
+
+.action-button:hover {
+  opacity: 0.9;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
   cursor: pointer;
 }
 
@@ -27,6 +78,9 @@
     min-width: 600px;
   }
   .todo-title {
-    font-size: 30px;
+    font-size: 24px;
+  }
+  .edit-input {
+    font-size: 24px;
   }
 }
